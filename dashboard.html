@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Real Estate Prices in Gdańsk Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.gdansk.pl/otwarte-dane-w-gdansku?show=data&id=ceny-mieszkan-i-domow-w-gdansku&s=byGroup&i=gospodarka" target="_blank">Source</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 d-none d-lg-block left-nav">
+                <h4 class="nav-title">Chart Overview</h4>
+                <p>This dashboard presents an analysis of real estate prices in Gdańsk. It includes historical data visualized through various chart types, providing insights into price trends over different years.</p>
+            </div>
+            <div class="col-lg-8"></div>
+            <div class="col-lg-2 d-none d-lg-block right-nav text-right">
+                <h4 class="nav-title">Date and Time</h4>
+                <p id="currentDateTime"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 mb-4">
+        <h2 id="chartTitle" class="text-center mb-4">Real Estate Prices in Gdańsk</h2>
+        <div class="year-selector text-center">
+            <p>Select a year to view the corresponding data on the charts:</p>
+            <button id="btn2014" class="btn btn-primary m-1">2014</button>
+            <button id="btn2015" class="btn btn-primary m-1">2015</button>
+            <button id="btn2016" class="btn btn-primary m-1">2016</button>
+            <button id="btn2017" class="btn btn-primary m-1">2017</button>
+            <button id="btn2018" class="btn btn-primary m-1">Clear</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 canvas-container">
+                <canvas id="chart1"></canvas>
+            </div>
+            <div class="col-md-12 canvas-container">
+                <canvas id="chart2"></canvas>
+            </div>
+            <div class="col-md-12 canvas-container">
+                <canvas id="chart3"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">© 2024 Real Estate Analytics Dashboard. All rights reserved.</span>
+            <p>Terms of Use | Privacy Policy | Contact Us</p>
+        </div>
+    </footer>
+</body>
+</html>

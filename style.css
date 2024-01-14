@@ -1,0 +1,81 @@
+html, body {
+    background: url('background.gif') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    height: 100%;
+    margin: 0;
+}
+
+.body-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.navbar-custom {
+    background-color: #333;
+    color: white;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white;
+}
+
+.chart-placeholder {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.chart-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.canvas-container {
+    height: 400px;
+}
+
+.left-nav, .right-nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.nav-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.footer p, .footer span {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.navbar {
+    background-color: #e3f2fd;
+}
+
+@media screen and (max-width: 992px) {
+    .left-nav, .right-nav {
+        display: none;
+    }
+}
